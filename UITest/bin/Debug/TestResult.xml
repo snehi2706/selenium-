@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="UITest.exe" fullname="C:/Users/Lenovo/source/repos/UITest/UITest/bin/Debug/UITest.exe" testcasecount="2" result="Failed" start-time="2024-06-20T06:59:11.1385132Z" end-time="2024-06-20T07:00:16.2764174Z" duration="65.137513" total="2" passed="1" failed="1" inconclusive="0" skipped="0" warnings="0" asserts="0" random-seed="1936727838">
+  <command-line><![CDATA["C:\Users\Lenovo\source\repos\UITest\UITest\bin\Debug\UITest.exe"   ]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1004" name="UITest.exe" fullname="C:/Users/Lenovo/source/repos/UITest/UITest/bin/Debug/UITest.exe" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2024-06-20T06:59:11.1385132Z" end-time="2024-06-20T07:00:16.2764174Z" duration="65.137513" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="4.0.1.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19045" platform="Win32NT" cwd="C:\Users\Lenovo\source\repos\UITest\UITest\bin\Debug" machine-name="DESKTOP-IAA7LG3" user="Lenovo" user-domain="DESKTOP-IAA7LG3" culture="en-IN" uiculture="en-US" os-architecture="x86" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Lenovo\source\repos\UITest\UITest\bin\Debug" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="19424" />
+      <property name="_APPDOMAIN" value="UITest.exe" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1005" name="UITest" fullname="UITest" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2024-06-20T06:59:11.1444973Z" end-time="2024-06-20T07:00:16.2764174Z" duration="65.132432" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1000" name="UITests" fullname="UITest.UITests" classname="UITest.UITests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2024-06-20T06:59:11.1454946Z" end-time="2024-06-20T07:00:16.2764174Z" duration="65.131125" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="ParameterizedMethod" id="1003" name="VerifyUIElements" fullname="UITest.UITests.VerifyUIElements" classname="UITest.UITests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2024-06-20T06:59:11.1484875Z" end-time="2024-06-20T07:00:16.2763079Z" duration="65.127640" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1001" name="VerifyUIElements(&quot;chrome&quot;)" fullname="UITest.UITests.VerifyUIElements(&quot;chrome&quot;)" methodname="VerifyUIElements" classname="UITest.UITests" runstate="Runnable" seed="19839847" result="Passed" start-time="2024-06-20T06:59:11.1487290Z" end-time="2024-06-20T06:59:13.7915645Z" duration="2.643014" asserts="0" />
+          <test-case id="1002" name="VerifyUIElements(&quot;internet explorer&quot;)" fullname="UITest.UITests.VerifyUIElements(&quot;internet explorer&quot;)" methodname="VerifyUIElements" classname="UITest.UITests" runstate="Runnable" seed="1591474848" result="Failed" label="Error" start-time="2024-06-20T06:59:13.7935569Z" end-time="2024-06-20T07:00:16.2753112Z" duration="62.481781" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:63132/session/00bea7fb-4d89-424b-86d3-b54caff1d296/url timed out after 60 seconds.
+  ----> System.Threading.Tasks.TaskCanceledException : A task was canceled.]]></message>
+              <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.WebDriver.set_Url(String value)
+   at OpenQA.Selenium.Navigator.GoToUrl(String url)
+   at UITest.UITests.VerifyUIElements(String browser) in C:\Users\Lenovo\source\repos\UITest\UITest\UITests.cs:line 40
+--TaskCanceledException
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.<MakeHttpRequest>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.<>c__DisplayClass33_0.<<Execute>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
